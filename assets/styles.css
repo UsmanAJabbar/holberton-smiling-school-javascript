@@ -1,0 +1,259 @@
+:root {
+	--color-accent-primary		: #C271FF;
+	--color-accent-secondary	: #071629;
+	--color-white				: #FFF;
+	--color-black				: #000;
+
+	--font-primary				: 'Source Sans Pro';
+	--font-seconday				: 'Spin Cycle OT';
+	--font-tertiary				: 'Coiny'
+}
+
+body {
+	font-family: 'Source Sans Pro';
+}
+
+/* Resets font sizes */
+h2 {
+	font-size: 72px!important;
+}
+h3 {
+	font-size: 50px!important;
+}
+h4 {
+	font-size: 32px!important;
+}
+h5 {
+	font-size: 1.5rem!important;
+}
+blockquote {
+	font-size: 20px;
+}
+
+nav a {
+	color: var(--color-white) !important;
+}
+nav a:hover, nav a:active {
+	color: var(--color-white) !important;
+}
+
+button:hover, button:active {
+	opacity: 0.9;
+}
+
+/* Add-on Styles */
+.accent-primary-bg {
+	color: var(--color-white)!important;
+	background-color: var(--color-accent-primary)!important;
+}
+.accent-primary-txt {
+	color: var(--color-accent-primary);
+}
+.accent-secondary-bg {
+	background-color: var(--color-accent-secondary)!important;
+}
+.font-tertiary {
+	font-family: var(--font-tertiary);
+}
+.bg-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-opacity-5 {
+	background-color: #ffffff80 !important;
+}
+
+.btn-shadow {
+	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+}
+#hero {
+	background-image: url(./images/pic_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 1000px;
+}
+#logo-pic {
+	height: 30px;
+	width: 37px;
+}
+#logo-text {
+	height: 2rem;
+}
+.profile {
+	max-width: 9.375rem;
+}
+.profile > img {
+	width: 9.375rem;
+}
+.profile > p {
+	font-style: italic;
+}
+
+#testimonials {
+	background-color: var(--color-accent-primary);
+}
+.testimonial_profile_pic > img {
+	width: 150px;
+	height: 150px;
+}
+.carousel-control-next-icon.light {
+	background-image: url(./images/arrow_white_right.png)!important;
+}
+.carousel-control-prev-icon.light {
+	background-image: url(./images/arrow_white_left.png)!important;
+}
+.carousel-control-next-icon.dark {
+	background-image: url(./images/arrow_black_right.png)!important;
+}
+.carousel-control-prev-icon.dark {
+	background-image: url(./images/arrow_black_left.png)!important;
+}
+.carousel-control-next, .carousel-control-prev {
+	opacity: 1 !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	height: 60px !important;
+	width: 30px !important;
+}
+
+.video_thumbnail {
+	background-image: url(./images/thumbnail_1.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+.video_thumbnail_2 {
+	background-image: url(./images/thumbnail_2.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+.video_thumbnail_3 {
+	background-image: url(./images/thumbnail_3.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+.video_thumbnail_4 {
+	background-image: url(./images/thumbnail_4.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+.play_btn {
+	background-image: url(./images/play.png);
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+}
+.star.accented {
+	background-image: url(./images/star_on.png);
+}
+.star.greyed {
+	background-image: url(./images/star_off.png);
+}
+.star {
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#membership {
+	background-color: var(--color-accent-secondary);
+}
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+	font-size: 2.5rem;
+}
+#pricing_header {
+	background-image: url(./images/pic_2.jpg);
+}
+
+#pricing_header svg {
+	fill: #82D24F;
+	width: 30px;
+	height: 30px;
+}
+
+/* Center Logo on mobile devices */
+@media screen and (max-width: 576px) {
+	#joined-logos {
+		margin-left: 33%;
+		margin-right: 33%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}
+@media screen and (min-width: 992px) {
+	#course-h-heading {
+		padding-left: 10rem;
+		padding-right: 10rem;
+	}
+}
+.rounded-top-custom {
+	border-top-left-radius: 0.25rem!important;
+	border-top-right-radius: 0.25rem!important;
+	border-bottom-left-radius: 0!important;
+	border-bottom-right-radius: 0!important;
+	border-bottom: 1px solid white!important;
+}
+.search-icon {
+	background: #ffffff80 url(./images/search.svg) no-repeat left 1rem center/15px 15px!important;
+}
+.input_box {
+	height: calc(1.5em + 1rem + 2px);
+	font-size: 1.25rem;
+	font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+	vertical-align: middle;
+	border: 1px solid #ced4da;
+	appearance: none;
+}
+.button {
+	background: #ffffff80;
+}
+
+
+/* This has a much improved background system... had to add this over there */
+/* Since touching any of the previous tasks gets you docked */
+.video_thumbnail_fixed {
+	width: 100%;
+	height: 154px;
+}
+.play_btn_fixed {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image: url(./images/play.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 5rem;
+	height: 5rem;
+}
+.bg-1 {
+	background-image: url(./images/thumbnail_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-2 {
+	background-image: url(./images/thumbnail_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-3 {
+	background-image: url(./images/thumbnail_3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg-4 {
+	background-image: url(./images/thumbnail_4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
