@@ -89,7 +89,7 @@ button:hover, button:active {
 	font-style: italic;
 }
 
-#testimonials {
+#quotes {
 	background-color: var(--color-accent-primary);
 }
 .testimonial_profile_pic > img {
