@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Page Metadata -->
+		<title>Homepage</title>
+
+		<!-- Responsive Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Custom Font Imports -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/fonts/fonts.css">
+
+		<!-- JS imports -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="assets/scripts.js"></script>
+		
+		<!-- CSS Imports -->
+		<link rel="stylesheet" href="./assets/styles.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+		<main>
+			<section class="container-fluid pb-5 m-0 p-0 d-flex flex-column justify-content-between text-center text-white" id="hero">
+				<div class="container my-4" id="navbar-container">
+					<header>
+						<nav class="navbar navbar-dark navbar-expand-sm text-uppercase row d-flex justify-content-md-between position-relative">
+							<button class="navbar-toggler d-block d-sm-none collapsed mr-2" data-toggle="collapse" data-target="#menu-items">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<a class="navbar-brand mr-sm-auto d-flex flex-column flex-sm-row align-items-center" href="#" id="joined-logos">
+								<img src="./assets/images/smile_off.png" id="logo-pic">
+								<img src="./assets/images/logo.png" id="logo-text">
+							</a>
+							<div id="dummy" class="col-2 d-sm-none"></div>
+							<ul class="navbar-nav navbar-collapse flex-sm-grow-0 mt-4 mt-sm-0 collapse" id="menu-items">
+								<li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+								<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+							</ul>
+						</nav>
+					</header>
+				</div>
+				<div class="container my-auto" id="text-container">
+					<div id="cta" class="py-5">
+						<h2 id="hero-text" class="font-weight-bold m-0">Get Schooled</h2>
+						<div id="emotions" class="d-flex justify-content-center text-uppercase font-weight-bold">
+							<p class="px-0 py-3">Smiles</p>
+							<p class="px-5 py-3">Grim</p>
+							<p class="px-0 py-3">Laugh</p>
+						</div>
+						<a id="cta-btn" href="#">
+							<button class="btn btn-shadow accent-primary-bg rounded-pill text-uppercase p-2">Register for free</button>
+						</a>
+					</div>
+				</div>
+				<div class="container mt-auto" id="profiles" >
+					<h4 class="font-weight-light py-5"><span class="accent-primary-txt font-weight-bold">Learn</span> from the pros</h4>
+					<div class="row">
+						<div class="profile col-6 col-md-3 p-0">
+							<img class="rounded-circle" src="./assets/images/profile_1.jpg" alt="">
+							<h5 class="font-weight-bold">Phillip Massey</h5>
+							<p>« Smile of the year » 2018 - 2019</p>
+						</div>
+						<div class="profile col-6 col-md-3 p-0">
+							<img class="rounded-circle" src="./assets/images/profile_2.jpg" alt="">
+							<h5 class="font-weight-bold">Nannie Lawrence</h5>
+							<p>Best « little smile » 2017</p>
+						</div>
+						<div class="profile col-6 col-md-3 p-0">
+							<img class="rounded-circle" src="./assets/images/profile_3.jpg" alt="">
+							<h5 class="font-weight-bold">Bruce Walters</h5>
+							<p>Best « Friend Smile » live performance 2019</p>
+						</div>
+						<div class="profile col-6 col-md-3 p-0">
+							<img class="rounded-circle" src="./assets/images/profile_4.jpg" alt="">
+							<h5 class="font-weight-bold">Henry Hughes</h5>
+							<p>« 24h smiles » winner 2016 - 2019</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container-fluid py-5 m-0 p-4 text-white position-relative" id="quotes">
+				<div class="loader"></div>
+				<div class="container d-none">
+					<div id="carousel_slider" class="carousel slide m-4" data-ride="carousel">
+						<div class="carousel-inner">
+						</div>
+					</div>
+					<a href="#carousel_slider" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon light"></span>
+						<span class="sr-only"></span>
+					</a>
+					<a href="#carousel_slider" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon light"></span>
+						<span class="sr-only"></span>
+					</a>
+				</div>
+			</section>
+			<section class="container-fluid py-5 bg-white position-relative" id="popular-tutorials">
+				<div class="loader"></div>
+				<div class="container d-none">
+					<h4 class="text-center">Most <span class="accent-primary-txt font-weight-bold">popular</span> tutorials</h4>
+					<div id="video_slider" class="carousel slide m-4" data-ride="carousel">
+						<div class="carousel-inner">
+						</div>
+					</div>
+					<a href="#video_slider" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon dark"></span>
+					</a>
+					<a href="#video_slider" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon dark"></span>
+					</a>
+				</div>
+			</section>
+			<section class="container-fluid py-5 m-0 text-white text-center" id="membership">
+				<h4><span class="accent-primary-txt">Free</span> membership</h4>
+				<div class="container d-flex flex-column align-items-center justify-content-center">
+					<div class="row">
+						<div class="smiley_container col-md-6 col-lg-3 my-4">
+							<img class="m-4" src="./assets/images/smile_on.png">
+							<h4 class="mb-3">Lorem Ipsum</h4>
+							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						</div>
+						<div class="smiley_container col-md-6 col-lg-3 my-4">
+							<img class="m-4" src="./assets/images/smile_on.png">
+							<h4 class="mb-3">Lorem Ipsum</h4>
+							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						</div>
+						<div class="smiley_container col-md-6 col-lg-3 my-4">
+							<img class="m-4" src="./assets/images/smile_on.png">
+							<h4 class="mb-3">Lorem Ipsum</h4>
+							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						</div>
+						<div class="smiley_container col-md-6 col-lg-3 my-4">
+							<img class="m-4" src="./assets/images/smile_on.png">
+							<h4 class="mb-3">Lorem Ipsum</h4>
+							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+						</div>
+					</div>
+					<a id="cta-btn" class="p-4" href="#">
+						<button class="btn btn-shadow accent-primary-bg rounded-pill text-uppercase p-2">Register for free</button>
+					</a>
+				</div>
+			</section>
+			<section class="container-fluid py-5 bg-white position-relative" id="courses">
+				<div class="container">
+					<h4 class="text-center"><span class="accent-primary-txt font-weight-bold">Latest</span> videos</h4>
+					<div class="d-block d-sm-none">
+						<div id="video_slider-mobile-tuts" class="carousel slide m-4" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail_2 d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="card rounded overflow-hidden p-0 border-0">
+										<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+											<div class="play_btn"></div>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+											<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+										</div>
+										<div class="card-footer bg-white border-0 p-3">
+											<div class="d-flex align-items-center">
+												<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+												<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+											</div>
+											<div class="rating_plus_time d-flex justify-content-between">
+												<div class="rating d-flex">
+													<div class="star accented mr-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star accented mx-1"></div>
+													<div class="star greyed ml-1"></div>
+												</div>
+												<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#video_slider-mobile-tuts" class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon dark"></span>
+							<span class="sr-only"></span>
+						</a>
+						<a href="#video_slider-mobile-tuts" class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon dark"></span>
+							<span class="sr-only"></span>
+						</a>
+					</div>
+					<div class="d-none d-sm-block d-md-none">
+						<div id="video_slider-tablet-tuts" class="carousel slide m-4" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="card rounded overflow-hidden p-1 border-0 col-6">
+											<div class="video_thumbnail d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-6">
+											<div class="video_thumbnail_2 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="card rounded overflow-hidden p-1 border-0 col-6">
+											<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-6">
+											<div class="video_thumbnail_4 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#video_slider-tablet-tuts" class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon dark"></span>
+							<span class="sr-only"></span>
+						</a>
+						<a href="#video_slider-tablet-tuts" class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon dark"></span>
+							<span class="sr-only"></span>
+						</a>
+					</div>
+					<div class="d-none d-md-block">
+						<div id="video_slider-desktop-tuts" class="carousel slide m-4" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_2 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_4 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_3 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_4 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_4 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+										<div class="card rounded overflow-hidden p-1 border-0 col-3">
+											<div class="video_thumbnail_4 d-flex justify-content-center align-items-center">
+												<div class="play_btn"></div>
+											</div>
+											<div class="card-body">
+												<h5 class="card-title font-weight-bold">Diagonal Smile</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+											</div>
+											<div class="card-footer bg-white border-0 p-3">
+												<div class="d-flex align-items-center">
+													<img width="50px" class="rounded-circle mr-2 my-2" src="./assets/images/profile_1.jpg">
+													<p class="font-weight-bold m-0 accent-primary-txt">Phillip Massey</p>
+												</div>
+												<div class="rating_plus_time d-flex justify-content-between">
+													<div class="rating d-flex">
+														<div class="star accented mr-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star accented mx-1"></div>
+														<div class="star greyed ml-1"></div>
+													</div>
+													<p class="time accent-primary-txt font-weight-bold m-0	">8 min</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#video_slider-desktop-tuts" class="carousel-control-prev" data-slide="prev">
+							<span class="carousel-control-prev-icon dark"></span>
+							<span class="sr-only"></span>
+						</a>
+						<a href="#video_slider-desktop-tuts" class="carousel-control-next" data-slide="next">
+							<span class="carousel-control-next-icon dark"></span>
+							<span class="sr-only"></span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="container-fluid py-5 m-0 accent-secondary-bg">
+			<div class="container">
+				<div id="footer-content" class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+					<div class="joined_logo">
+						<img id="logo-pic" src="./assets/images/smile_off.png" alt="">
+						<img id="logo-text" src="./assets/images/logo.png" alt="">
+					</div>
+					<div class="social-media-icons d-flex">
+						<div class="text-white my-3 holberton_school-icon-ic_facebook"></div>
+						<div class="text-white my-3 holberton_school-icon-ic_twitter"></div>
+						<div class="text-white my-3 holberton_school-icon-ic_instagram"></div>
+					</div>
+				</div>
+				<small class="d-flex justify-content-center text-secondary mt-4 mt-sm-0">©smileschool 2020</small>
+			</div>
+		</footer>
+	</body>
+</html>

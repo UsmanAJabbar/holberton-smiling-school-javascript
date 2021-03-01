@@ -116,38 +116,14 @@ button:hover, button:active {
 	width: 30px !important;
 }
 
-.video_thumbnail {
-	background-image: url(./images/thumbnail_1.jpg);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 300px;
-	background-size: cover;
+.video-thumbnail {
+	height: 170px;
 }
-.video_thumbnail_2 {
-	background-image: url(./images/thumbnail_2.jpg);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 300px;
-	background-size: cover;
-}
-.video_thumbnail_3 {
-	background-image: url(./images/thumbnail_3.jpg);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 300px;
-	background-size: cover;
-}
-.video_thumbnail_4 {
-	background-image: url(./images/thumbnail_4.jpg);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 300px;
-	background-size: cover;
-}
+
 .play_btn {
 	background-image: url(./images/play.png);
-	width: 100px;
-	height: 100px;
+	width: 70px;
+	height: 70px;
 	background-size: contain;
 }
 .star.accented {
@@ -219,44 +195,6 @@ button:hover, button:active {
 	background: #ffffff80;
 }
 
-
-/* This has a much improved background system... had to add this over there */
-/* Since touching any of the previous tasks gets you docked */
-.video_thumbnail_fixed {
-	width: 100%;
-	height: 154px;
-}
-.play_btn_fixed {
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-	background-image: url(./images/play.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 5rem;
-	height: 5rem;
-}
-.bg-1 {
-	background-image: url(./images/thumbnail_1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.bg-2 {
-	background-image: url(./images/thumbnail_2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.bg-3 {
-	background-image: url(./images/thumbnail_3.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.bg-4 {
-	background-image: url(./images/thumbnail_4.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 .loader {
     border: 10px solid #f3f3f3;
     border-top: 10px solid #C271FF;
@@ -270,4 +208,23 @@ button:hover, button:active {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.bg-1 {
+	background-image: url(./images/thumbnail_1.jpg);
+}
+.bg-2 {
+	background-image: url(./images/thumbnail_2.jpg);
+}
+.bg-3 {
+	background-image: url(./images/thumbnail_3.jpg);
+}
+.bg-4 {
+	background-image: url(./images/thumbnail_4.jpg);
+}
+
+.bg-full {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
 }
