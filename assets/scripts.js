@@ -8,14 +8,16 @@ apiGetter = (end) => {
 	/* Returns the necessary callback function to generate that section. */
 	let sectionGen = {
 		'quotes': getQuotes,
-		'popular-videos': getTutorials,
+		'popular-tutorials': getTutorials,
 		'latest-videos': getVideos
 		// 'courses': getCourses
 	}
 
 	$.ajax({
 		url: `https://smileschool-api.hbtn.info/${end}`,
-		method: 'GET',
+		type: 'GET',
+		crossDomain : true,
+		// headers: { 'Access-Control-Allow-Origin': '*' },
 		success: (data) => { sectionGen[end](data, end); },
 		fail: () => { alert(`The backend is not reachable`); }
 	})
@@ -56,7 +58,6 @@ sectionsInDOM = () => {
  * 		@section: endpoint or section ID.
  */
 getQuotes = (api, section) => { 
-
 	/* Adds all the data in the class */
 	for (const data of api) {
 		$(`#${section} .carousel-inner`).append(
@@ -79,7 +80,6 @@ getQuotes = (api, section) => {
 }
 
 getTutorials = (api, section) => {
-
 	cardGenerator = (api, numberOfCards) =>  {
 
 		starGen = (rating) => {
@@ -185,7 +185,7 @@ getTutorials = (api, section) => {
 }
 
 getVideos = (api, section) => {
-
+	console.log('videos');
 	cardGenerator = (api, numberOfCards) =>  {
 
 		starGen = (rating) => {
@@ -292,5 +292,6 @@ getVideos = (api, section) => {
 
 $(window).ready( () => {
 	apiGetter('quotes');
-	apiGetter('popular-videos');
+	apiGetter('popular-tutorials');
+	apiGetter('latest-videos');
 })
