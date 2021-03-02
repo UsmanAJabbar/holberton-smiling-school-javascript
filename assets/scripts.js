@@ -10,14 +10,10 @@ apiGetter = (end) => {
 		'quotes': getQuotes,
 		'popular-tutorials': getTutorials,
 		'latest-videos': getVideos
-		// 'courses': getCourses
 	}
 
 	$.ajax({
 		url: `https://smileschool-api.hbtn.info/${end}`,
-		type: 'GET',
-		crossDomain : true,
-		// headers: { 'Access-Control-Allow-Origin': '*' },
 		success: (data) => { sectionGen[end](data, end); },
 		fail: () => { alert(`The backend is not reachable`); }
 	})
@@ -37,8 +33,16 @@ sectionsInDOM = () => {
 	 * sections.
 	 */
 	let sectionIDs = [];
-	$('section').each(function () {
-		sectionIDs.push( $(this).attr('id') );
+	let sectionGen = {
+		'quotes': getQuotes,
+		'popular-tutorials': getTutorials,
+		'latest-videos': getVideos
+		// 'courses': getCourses
+	}
+
+	$('section').each( function() {
+		if( $(this).attr('id') in sectionGen)
+			sectionIDs.push( $(this).attr('id') );
 	});
 	return sectionIDs;
 }
@@ -52,6 +56,23 @@ sectionsInDOM = () => {
  * generating content for the front end after
  * API getter returns the necessary data
  * returned from the queried API.
+ * 
+ * FUNCTIONS:
+ * 		All of the parent functions take data returned from the API
+ * 		as well as the ID of the section that doubles as the initiator
+ * 		for the endPreloader() function.
+ * 		getQuotes() - generates and returns the cards.
+ * 		getTutorials()/getVideos() - Parent function.
+ * 			cardGenerator() - Generates the cards.
+ * 				starGen() - Generates an array of divs containing stars.
+ * 			carouselItemContainerGen() - Since Bootstrap's carousel looks
+ * 				for the next carousel-item class, we need to add as many cards
+ * 				we could to it to form a row.
+ * 			tutorialsInit()/videosInit() - Initiator function that calls on the
+ * 				carouselItemContainerGen() function and starts the chain of processing
+ * 				for the cards to be generated. Later in the function its used to keep
+ * 				track of resizes and called on carouselItemContainerGen() with new
+ * 				row sizes if needed based on the device's screen width...
  * 
  * ARGUMENTS:
  * 		@api: data returned from the API
@@ -185,7 +206,7 @@ getTutorials = (api, section) => {
 }
 
 getVideos = (api, section) => {
-	console.log('videos');
+
 	cardGenerator = (api, numberOfCards) =>  {
 
 		starGen = (rating) => {
@@ -291,7 +312,8 @@ getVideos = (api, section) => {
 }
 
 $(window).ready( () => {
-	apiGetter('quotes');
-	apiGetter('popular-tutorials');
-	apiGetter('latest-videos');
-})
+	let sectionInDOM = sectionsInDOM();
+
+	for (section of sectionInDOM)
+		apiGetter(section);
+});
